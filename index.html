@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="images/line.png">
+    <link href="css/animate.min.css" rel="stylesheet"><script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src='js/jquery-1.11.1.js'></script>
+    <script src='js/bootstrap.js'></script>
+    <script src='js/public.js'></script>
+    <script src='js/index.js'></script>
+</head>
+<body>
+	<nav class="navbar navbar-default my-navbar">
+	  <div class="container-fluid header-nav">
+		    <div class="navbar-header navbar-header1">
+			      <button type="button" class="navbar-toggle collapsed my-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      </button>
+			      <div class="my-logo">
+			      	<a class="navbar-brand" href="#">
+			      		<img src="images/logo.png" alt="">
+			      	</a>
+			      </div>
+			       <ul class="nav navbar-nav navbar-right search-cart">
+				        <li>
+ 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target=".bs-example-modal-lg">&#xe61f;</span></a>
+							<!-- </button> -->
+							<div class="modal bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
+  								<!-- 窗口声明 -->
+								  <div class="modal-dialog modal-lg" role="document">
+								   	<!-- 内容声明 -->
+								    <div class="modal-content my-modal">
+								    	<!-- 模态框头部 -->
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel">搜索</h4>
+								      </div>
+								      <!-- 模态框主体 -->
+								      <div class="modal-body">
+								        <input type="text" name="" placeholder="请输入搜索词" id="" style="width:100%;outline:none;border:none">
+								      </div>
+								      <!-- 模态框脚注 -->
+								      <div class="modal-footer">
+									      <button type="button" class="btn btn-primary">确认</button>
+									       <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								
+								      </div>
+								    </div>
+								  </div>
+							</div>
+				        </li>
+				        <li><a href="#"><span class="iconfont header-icon header-bicon">&#xe6a4;</span></a></li>
+				        <li class="cart"><a href="#" class="header-icon1"><span class="iconfont  header-icon">&#xe604;</span></a></li>
+				   </ul>
+		    </div>
+
+		    <div class="collapse navbar-collapse my-col" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav my-nav">
+			        <li><a href="#" target="_blank" class="nav-curr">探索北欧 <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">私人定制</a></li>
+			        <li><a href="html/camp.html" target="_blank">北欧夏令营</a></li>
+			        <li><a href="html/tour.html" target="_blank">主题游</a></li>
+			        <li><a href="html/self.html" target="_blank">旅游商城</a></li>
+			        <li><a href="#">北欧资讯</a></li>
+			        <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- banner中的轮播图 -->
+	<div class="banner  ">
+		<div id="carousel-example-generic" class="carousel slide bannerimg animated slideInRight" data-ride="carousel">
+        <!-- 指示器 -->
+	        <ol class="carousel-indicators dot">
+		          <li data-target="#carousel-example-generic" data-slide-to="0" class="active dot1"></li>
+		          <li data-target="#carousel-example-generic" data-slide-to="1" class="dot1"></li>
+		          <li data-target="#carousel-example-generic" data-slide-to="2" class="dot1"></li>
+		          <li data-target="#carousel-example-generic" data-slide-to="3" class="dot1"></li>
+	        </ol>
+	        <!-- 轮播图片及说明文字 -->
+	        <div class="carousel-inner lunbo" role="listbox">
+		          <div class="item active">
+		          <!--
+		          .hidden-xs	额外的小设备（小于 768px）隐藏
+				  .hidden-sm	小型设备（768 px 起）隐藏
+				  .hidden-md	中型设备（768 px 到 991 px）隐藏
+		           .hidden-lg	大型设备（992 px 及以上）隐藏 -->
+			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner1.jpg')"></a>
+			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner1.jpg" alt=""></a>
+			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
+						    <h4>冰岛南岸极光专享之旅</h4>
+						    <h5>[主题小团]</h5>
+						    <div class="place">
+						    	<a href="#" target="_blank" class="pbefore">极光精灵</a>
+						    	<a href="#" target="_blank" class="pbefore">蓝湖温泉</a>
+						    	<a href="#" target="_blank" class="pbefore">黑沙滩</a>
+						    	<a href="#" target="_blank" class="pbefore">钻石沙滩</a>
+						    	<a href="#" target="_blank">冰冻湖</a>
+						    </div>
+						 </div>
+		          </div>
+		          <div class="item">
+			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner2.jpg')"></a>
+			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner2.jpg" alt=""></a>
+			            <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
+			            	<span class="iconfont dicon">&#xe612;</span>
+						    <h4>丹麦亲子童趣游</h4>
+						    <h5>[主题小团]</h5>
+						    <div class="place place1">
+						    	<a href="#" target="_blank">和孩子一起回到童年，感受通话王国的魅力</a>
+						    </div>
+						 </div>
+		          </div>
+		          <div class="item">
+			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner3.jpg')"></a>
+			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner3.jpg" alt=""></a>
+			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
+						    <h4>冰“芬”极光享趣之旅</h4>
+						    <h5>[主题小团]</h5>
+						    <div class="place">
+						    	<a href="#" target="_blank" class="pbefore">圣诞老人</a>
+						    	<a href="#" target="_blank" class="pbefore">邂逅极光</a>
+						    	<a href="#" target="_blank" class="pbefore">最美夜火车</a>
+						    	<a href="#" target="_blank" class="pbefore">哈士奇雪橇</a>
+						    	<a href="#" target="_blank">驯鹿美食</a>
+						    </div>
+						 </div>
+		          </div>
+		          <div class="item">
+			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner4.jpg')"></a>
+			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner4.jpg" alt=""></a>
+			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
+						    <h4>挪威瑞典极光双享游</h4>
+						    <h5>[主题小团]</h5>
+						    <div class="place place2">
+						    	<a href="#" target="_blank" class="pbefore">“最全极光追寻路线”</a>
+						    	<a href="#" target="_blank" class="pbefore">罗浮敦群岛</a>
+						    	<a href="#" target="_blank" class="pbefore">国际极光站</a>
+						    	<a href="#" target="_blank">观鲸之旅</a>
+						    </div>
+						 </div>
+		          </div>
+	        </div>
+	        <!-- 控制按钮：左右切换 -->
+	        <a class="left carousel-control left-btn" href="#carousel-example-generic" role="button" data-slide="prev">
+	          <span class="iconfont mbtn">&#xe663;</span>
+	        </a>
+	        <a class="right carousel-control right-btn" href="#carousel-example-generic" role="button" data-slide="next">
+	          <span class="iconfont mbtn">&#xe63f;</span>
+	        </a>
+	      </div>
+	</div>
+
+	<div class="mycontainer">
+		<!-- 如何定制 -->
+		<div class="makes container">
+			<div class="make-title">
+				<h4>如何定制</h4>
+				<p>How to customized</p>
+			</div>
+			<div class="row">
+			    <div class="col-xs-3 wow fadeInUp col1">
+				    <div class="thumbnail mythumbnail">
+					      <img src="images/make01.png" alt="" class="hidden-lg">
+					      <img src="images/make1.png" alt="" class="hidden-xs hidden-sm hidden-md">
+					      <div class="caption">
+						        <h3><a href="#">提交需求</a></h3>
+						        <p>收到您提交的定制需求后，松恩的旅行顾问将主动与您联系，就我们需要了解的问题与您沟通。</p>
+					      </div>
+				    </div>
+			    </div>
+			    <div class="col-xs-3 wow fadeInUp col2">
+					    <div class="thumbnail mythumbnail">
+					      <img src="images/make02.png" alt="" class="hidden-lg">
+					      <img src="images/make2.png" alt="" class="hidden-xs hidden-sm hidden-md">
+						      <div class="caption">
+						        <h3><a href="#">设计方案</a></h3>
+						        <p>我们将根据需求，为您量身定制旅行方案和报价，对于部分复杂需求，报价将在旅行方案确认后提供。</p>	  
+						      </div>
+					    </div>
+				  </div>
+				  <div class="col-xs-3 wow fadeInUp col3">
+					    <div class="thumbnail mythumbnail">
+					      <img src="images/make03.png" alt="" class="hidden-lg">
+					      <img src="images/make3.png" alt="" class="hidden-xs hidden-sm hidden-md">
+						      <div class="caption">
+						        <h3><a href="#">确认预定</a></h3>
+						        <p>旅行方案和报价确认后，我们将为您预留旅行资源库存，并与您签署旅游合同，收取旅行费用。</p>	  
+						      </div>
+					    </div>
+				  </div>
+				  <div class="col-xs-3 wow fadeInUp col4">
+					    <div class="thumbnail mythumbnail">
+					      <img src="images/make04.png" alt="" class="hidden-lg">
+					      <img src="images/make4.png" alt="" class="hidden-xs hidden-sm hidden-md">
+						      <div class="caption">
+						        <h3><a href="#">尊贵出行</a></h3>
+						        <p>松恩的旅行顾问将帮助您办理签证，确认出行前的各项事宜，发送出行通知，静待旅行启程。</p>	  
+						      </div>
+					    </div>
+				  </div>
+				
+			</div>
+		</div>
+
+		<!-- 主题小团 -->
+		<div class="theme">
+			<div class="container">
+				<div class="make-title">
+					<h4>主题小团</h4>
+					<p>Theme tour</p>
+				</div>
+				<div class="row">
+				    <div class="col-xs-4 col-sm-6 col-md-4 wow fadeInLeft col1">
+					    <div class="thumbnail mythumbnail">
+						      <div class="thum-img"><img src="images/theme1.jpg" alt=""></div>
+						      <div class="caption">
+							        <h3><a href="#">丹麦亲子童趣8天7晚之旅</a></h3>
+							        <p>童话王国尽览，和孩子一起寻找童真的乐趣，感受...</p>
+							        <p class="mprice">￥25480</p>	  
+
+						      </div>
+					    </div>
+				    </div>
+				    <div class="col-xs-4 col-sm-6 col-md-4 wow bounceIn col1">
+						    <div class="thumbnail mythumbnail">
+						      <div class="thum-img imgscale"><img src="images/theme3.jpg" alt=""></div>
+						      <div class="caption">
+						        <h3><a href="#">挪威瑞典极光之旅|罗浮敦群岛、特罗姆瑟、极光站</a></h3>
+						        <p>特罗姆瑟：  海上近距离观鲸之旅，一次难忘的...</p>
+						        <p class="mprice">￥31087</p>	  
+						      </div>
+						    </div>
+					</div>
+					<div class="col-xs-4 col-sm-6 col-md-4 wow fadeInRight col3">
+						    <div class="thumbnail mythumbnail">
+						      <div class="thum-img"><img src="images/theme2.jpg" alt=""></div>
+						       <div class="caption">
+						        <h3><a href="#">冰雪王国芬兰8天7晚缤”芬”极光享趣之旅</a></h3>
+						        <p>• 新春之旅：在圣诞老人故乡，拜访“真正的”...</p>
+						        <p class="mprice">￥29800</p>	  
+						      </div>
+						    </div>
+					</div>
+				</div>
+				<div class="more-theme"><a href="#">更多主题小团</a></div>
+				</div>
+		</div>
+
+		<!-- 旅游商城 -->
+		<div class="tour-self container">
+			<div class="make-title">
+				<h4>旅游商城</h4>
+				<p>Self pick-up</p>
+			</div>
+			<div class="row">
+			    <div class="col-xs-6 col-md-4 wow fadeInLeft col1">
+				    <div class="thumbnail mythumbnail">
+					      <div class="thum-img"><img src="images/self1.jpg" alt=""></div>
+					      <div class="caption">
+					      	<h3><a href="#">【DFDS游乐园】哥本哈根—奥斯陆游乐园</a></h3>
+					      	<p>一次游乐体验斯堪让你终生难忘..</p>
+						     <p class="mprice">￥1400</p>	  
+					      </div>
+				    </div>
+			    </div>
+				<div class="col-xs-6 col-md-4 wow bounceIn">
+					    <div class="thumbnail mythumbnail">
+					      <div class="thum-img"><img src="images/self2.jpg" alt=""></div>
+					      <div class="caption">
+					        <h3><a href="#">丹麦瓦尔登海国家公园 Mandø—生蚝门票</a></h3>
+					        <p>轻装上阵 ，马车随行营主亲接...</p>
+					        <p class="mprice">￥499</p>	  
+					      </div>
+					    </div>
+				</div>
+			    <div class="col-xs-6 col-md-4 wow fadeInRight">
+					    <div class="thumbnail mythumbnail">
+					      <div class="thum-img"><img src="images/self3.jpg" alt=""></div>
+					      <div class="caption">
+					        <h3><a href="#">丹麦比隆乐高乐园一日游门票 Legoland | 50周年</a></h3>
+					        <p>1968年首家乐高乐园在丹麦比隆Bill...</p>
+					        <p class="mprice">￥319 <span class="price-to">-</span>￥732</p>	  
+					      </div>
+					    </div>
+				</div>
+			</div>
+			<div class="more-theme"><a href="#">更多旅游单品</a></div>
+		</div>
+		<!-- 北欧旅游玩乐汇 -->
+		<div class="theme lifes">
+			<div class="container">
+				<div class="make-title">
+					<h4>北欧旅游玩乐汇</h4>
+					<p>Nordic Full Of Life</p>
+				</div>
+				<div class="row">
+				     <div class="col-md-3 wow fadeInUp life-col col1">
+					    <div class="thumbnail mythumbnail">
+						      <div class="thum-img"><img src="images/life4.jpg" alt=""></div>
+						      <div class="caption life-caption">
+						      	<span class="my-underline"></span>
+						      	<p>法罗群岛游记 | 探秘北大西洋最后的遗世秘境</p>
+						      	<p class="txt-hide">选择一个目的地，可能是因为一张照片，一部电影，也可能是从我们这篇游记开始。</p>
+						      </div>
+						      <div class="bor"></div>
+					    </div>
+				    </div>
+					 <div class="col-md-3 wow fadeInUp life-col col2">
+						    <div class="thumbnail mythumbnail">
+							     <div class="caption life-caption hidden-xs">
+							        <p>这里是世界极北之地，却拥有北半球最炫酷旅行</p>
+						       		 <p class="txt-hide">一份靠谱的丹麦游乐手册。</p>
+							       <span class="my-underline"></span>
+							      </div>
+							      <div class="thum-img"><img src="images/life2.png" alt=""></div>
+							      <div class="caption life-caption hidden-sm hidden-md hidden-lg">
+							      	<span class="my-underline"></span>
+							        <p>这里是世界极北之地，却拥有北半球最炫酷旅行</p>
+						       		 <p class="txt-hide">一份靠谱的丹麦游乐手册。</p>
+							      </div>
+						    	  <div class="bor"></div>
+						    </div>
+					</div>
+				     <div class="col-md-3 wow fadeInUp life-col col3">
+						    <div class="thumbnail mythumbnail">
+						      <div class="thum-img"><img src="images/life3.jpg" alt=""></div>
+						      <div class="caption life-caption">
+						       <span class="my-underline"></span>
+						        <p>挪威缩影，这个炎炎夏日我们如何畅游避暑圣地</p>
+						        <p class="txt-hide">星辰大海极光之歌 冰野设计酒店 火山温泉一路向北。</p>
+						      </div>
+						      <div class="bor"></div>
+						    </div>
+					</div>
+					 <div class="col-md-3 wow fadeInUp life-col col4">
+						    <div class="thumbnail mythumbnail">
+							     <div class="caption life-caption hidden-xs">
+							        <p>格陵兰岛很遥远么？这篇夏季攻略带你玩转北极圈</p>
+							        <p class="txt-hide">这里除了可以看到瞬间滑落到海底的冰川，还可以感受爱斯基摩人消失后的村庄。</p>
+							        <span class="my-underline"></span>
+							     </div>
+							     <div class="thum-img"><img src="images/life1.png" alt=""></div>
+							     <div class="caption life-caption  hidden-sm hidden-md hidden-lg">
+							    	<span class="my-underline"></span>
+							        <p>格陵兰岛很遥远么？我们花了八天用这篇夏季攻略带你玩转北极圈.</p>
+							     </div>
+						      	<div class="bor"></div>
+						    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 客户案例 -->
+		<div class="case container">
+			<div class="make-title">
+				<h4>客户案例</h4>
+				<p>Customer Case</p>
+			</div>
+			<div class="row">
+			     <div class="col-md-4 wow fadeInUp col1">
+				    <div class="thumbnail mythumbnail">
+					      <div class="case-img"><img src="images/case1.jpg" alt=""></div>
+					      <div class="caption">
+					      	 <h3>雯姐一家的丹麦之行</h3>
+					      	<p>‘其实，这是我们第二次来丹麦了，就是想体验些和上次不一样的活动，还好我们的旅行规划师帮我们设计了独一无二的行程，让我们留下了很多美好的回忆’</p>
+					      </div>
+				    </div>
+			    </div>
+				 <div class="col-md-4 wow fadeInUp col2">
+					    <div class="thumbnail mythumbnail">
+					      	<div class="case-img"><img src="images/case2.jpg" alt=""></div>
+						      <div class="caption">
+						      	 <h3>高先生两家庭北欧三国之旅</h3>
+						        <p>‘行程安排还是很满意的，出行指南做的很用心；让我们感受到了北欧人生活的慢节奏，同时深度了解了北欧的历史与文化，总体来说我们是相当满意的。’</p>
+						      </div>
+					    </div>
+				</div>
+			     <div class="col-md-4 wow fadeInUp col3">
+					    <div class="thumbnail mythumbnail">
+					      <div class="case-img"><img src="images/case3.jpg" alt=""></div>
+					      <div class="caption">
+					      	 <h3>符女士两人的冰岛极光之旅</h3>
+					        <p>‘这次的冰岛之行，让我们终身难忘。向导小哥很热情、认真；帮我们拍摄极光的照片和合影；感谢松恩北欧为我们安排的行程，让我们度过了舒适而又安心的旅程。’</p>
+					      </div>
+					    </div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- 侧导航 -->
+	<aside class="aside-nav">
+		<ul class="aside-lis">
+			<li class="aside-wx">
+				<div class="wx-box">
+              		<img src="images/wx1.jpg" alt="">
+              	</div>
+			</li>
+			<li class="aside-wb"></li>
+		</ul>
+	</aside>
+	
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<form action="#" class="row form-search">
+				<input type="text" name="" placeholder="请输入需要搜索的文字" class="col-xs-12 mysearch">
+				<span class="glyphicon glyphicon-search sear-icon"></span>
+			</form>
+			 <div class="row footer-content">
+		          <div class="col-sm-1">
+			            <h4>探索北欧</h4>
+			            <ul class="lis">
+			              <li><a href="#">丹麦</a></li>
+			              <li><a href="#">挪威</a></li>
+			              <li><a href="#/">芬兰</a></li>
+			              <li><a href="#">冰岛</a></li>
+			              <li><a href="#">瑞典</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>主题小团</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">丹挪10日深度游</a></li>
+			              <li><a href="#">丹冰挪13日专享游</a></li>
+			              <li><a href="#">冰岛环岛10日游</a></li>
+			              <li><a href="#">北欧四国经典之旅</a></li>
+			              <li><a href="#">丹芬爱10日文化游</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>北欧故事</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">韩小姐冰岛蜜月</a></li>
+			              <li><a href="#" target="_blank">张先生生蚝旅</a></li>
+			              <li><a href="#" target="_blank">李总四国游</a></li>
+			              <li><a href="#" target="_blank">美小姐的浪漫旅</a></li>
+			              <li><a href="#" target="_blank">帅先生的惊险旅</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>旅游商城</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">乐高乐园</a></li>
+			              <li><a href="#" target="_blank">赫拉辛基卡</a></li>
+			              <li><a href="#" target="_blank">挪威缩影</a></li>
+			              <li><a href="#" target="_blank">蓝湖温泉</a></li>
+			              <li><a href="#" target="_blank">瑞典热气球</a></li>
+			            </ul>
+		          </div>
+		           <div class="col-sm-1">
+			            <h4>关于我们</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">公司简介</a></li>
+			              <li><a href="#" target="_blank">联系方式</a></li>
+			              <li><a href="#" target="_blank">合作伙伴</a></li>
+			              <li><a href="#" target="_blank">加入我们</a></li>
+			              <li><a href="#" target="_blank">企业合作</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-2 footer-logo">
+			            <img src="images/logo.png" alt="">
+			            <ul class="lis">
+			              <li class="weibo"><a href="#"></a></li>
+			              <li class="wx">
+			              	<div class="wx-box">
+			              		<img src="images/wx.jpg" alt="">
+			              		<span>Andersen TravellerAps</span>
+			              	</div>
+			              </li>
+			              <li class="video-icon"><a href="#"></a></li>
+			              <li class="face-book"><a href="#"></a></li>
+			            </ul>
+		          </div>
+		     </div>
+		     <div class="footer-addr">
+		     	<span>Andersen Traveller 是一家注册于丹麦的旅行社 CVR: 38966189</span>
+		     	<span>京ICP备18017303号-1</span>
+		     </div>
+
+ 		 </div>
+	</footer>
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

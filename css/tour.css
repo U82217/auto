@@ -1,0 +1,106 @@
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+.section{
+	position: relative;
+}
+.sections>div{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;/* 固定背景图像 */
+    background-position: 0 0%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform-style: preserve-3d;
+	/*animation:play 20s infinite;*/
+}
+.screen1{
+	background-image: url('../images/screen1.jpg');
+}
+.boxshadow{
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.screen2{
+	background-image: url('../images/screen2.jpg');
+}
+.screen3{
+	background-image: url('../images/screen3.jpg');
+}/*
+@keyframes play{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.05);}
+	100%{transform: scale(1);}
+}*/
+.one{
+	overflow: hidden;
+	width:100%;
+	height:100%;
+	text-align: center;
+	color: #fff;
+	margin: 0px auto;
+}
+.title{
+	width:43%;
+	margin:0px auto;
+	position:relative;
+	top:32%;
+}
+.title h4{
+	font-family: arial;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+}
+.title p{
+	font-size:16px;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+}
+.title a{
+	display: inline-block;
+	font-size: 18px;
+    font-weight: bold;
+    padding: 20px 55px;
+    border-width: 1px;
+    margin-top: 50px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 188, 163);
+     transition: all .2s ease-in-out;
+}
+.title a:hover{
+	text-decoration: none;
+    color: rgb(0, 29, 93);
+    border-color: rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+}
+
+.footer{
+	position:relative;
+	top: 208%;
+	background:#fff;
+}
+@media (max-width:768px) {
+	.title{
+		width:90%;
+	}
+		
+}
+
+@media (max-width:992px) {
+	.sections>div{
+		min-height: 400px;
+	}
+	
+}

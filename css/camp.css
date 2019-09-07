@@ -1,0 +1,305 @@
+body,html{
+	width:100%;
+}
+.banner{
+	overflow: hidden;
+	padding-top: 44%;
+	position: relative;
+
+}
+.bgimg{
+	background-image: url(../images/theme1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width:100%;
+}
+.banner-container{
+	text-align: center;
+	position:absolute;
+	color: #fff;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.banner-col>span,.banner-container a{
+	display:block;
+}
+.banner-col{
+	background:rgba(0,0,0,0.3);
+	width:832px;
+	padding:50px;
+
+}
+.banner-col h3{
+	font-weight: 700;
+	margin-bottom: 50px;
+	position:relative;
+
+}
+.line1{
+	display:inline-block;
+	width:3px;
+	height:24px;
+	background-color:#fff;
+	position:absolute;
+	top: 0px;
+}
+.days{
+	font-size:18px;
+	margin-bottom: 40px;
+}
+.line2{
+	width:138px;
+	height:1px;
+	background-color:#fff;
+	margin:0px auto;
+}
+.sub-title{
+	font-weight: 700;
+	font-size:14px;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+
+.banner-btn{
+	width:160px;
+	height: 40px;
+	margin:0px auto 25px;
+	background: #fff;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	line-height: 40px;
+	font-size: 16px;
+	color:#000;
+}
+.bgimg{
+	transform: scale(1.1);
+    transition: 5s;
+    transform-style: preserve-3d;
+	animation:imgscale 15s infinite;
+}
+@keyframes imgscale{
+	0%{transform:scale(1.1);}
+	50%{transform:scale(1.2);}
+	100%{transform:scale(1.1);}
+}
+
+/* 探索自然博闻 */
+.center-container{
+	text-align:center;
+	padding-top:6%;
+	padding-bottom: 6%;
+}
+.center-container h4{
+	font-weight:700;
+	font-size:25px;
+	letter-spacing: 1px;
+    color: rgb(0, 168, 133);
+}
+.center-container p{
+	font-size: 14px;
+    color: rgb(169, 169, 169);
+}
+
+/* 行程亮点 */
+.tour-lighten h4{
+	font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    color: #3ec99b;
+    padding: 0 0 20px 0;
+    text-align:center;
+    position:relative;
+}
+.tour-lighten h4::after{
+	content: '';
+	width:200px;
+	height:3px;
+	position:absolute;
+	bottom:-12px;
+	background:#888080d9;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.tour-wrap{
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+	border-top:1px solid #e6e6e6;
+	padding-top:3%;
+	text-align:center;
+}
+.tour-wrap .container{
+	padding-right:0px;
+	padding-left:30px;
+	overflow:hidden;
+	position:relative;
+}
+.tour-wrap .thumbnail{
+	border:none;
+}
+.tour-wrap img{
+	border-radius:16px;
+}
+.tour-wrap a{
+	display:inline-block;
+	color: #666666;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.tour-wrap .thumbnail .caption{
+	padding-right: 51px;
+	padding-left: 51px;
+}
+.tourp{
+	color:#aaaaaa;
+	font-size:12px;
+	line-height:26px;
+}
+.tour-lis{
+	position: relative;
+	left: 0px;
+	width:314%;
+}
+.tour-lis li{
+	width:10.66%;
+	float: left;
+	cursor:pointer;
+}
+.tour-btn{
+	position:absolute;
+	top:32%;
+	font-size:28px;
+	color:#aaaaaa;
+	transform:translateY(-50%);
+	cursor: pointer;
+}
+.tour-left{
+	left:0px;
+}
+
+.tour-right{
+	right:0px;
+}
+.tour-lis .thum-img:hover img{
+	transform:scale(1.1);
+}
+
+.tour-wrap .click-b{
+	display:inline-block;
+	text-align:center;
+	width:100px;
+	height:50px;
+	font-size:16px;
+	font-weight:bold;
+	color:#666;
+	padding-top:0px;
+	line-height:50px;
+	border:1px solid #555;
+   transition: all .2s ease-in-out;
+}
+.click-b:hover{
+	text-decoration: none;
+    color: #fff;
+    background: rgb(51,51,51);
+    border-color: rgb(51,51,51);
+}
+
+.descript{
+	width:90%;
+	padding:30px 217px;
+	text-align:center;
+	margin:40px auto 70px;
+	color:#000;
+	font-size:15px;
+	border-bottom: 1px solid rgba(196,196,196,1);
+	border-top: 1px solid rgba(196,196,196,1);
+}
+
+.invite{
+	text-align:center;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.invite-img{
+	margin-top: 66px;
+}
+.invite h3{
+	font-size:17px;
+	color:#000;
+	font-weight:700;
+}
+.hoverimg{
+	cursor:pointer;
+}
+.invite p{
+	font-size:12px;
+	color:#000000;
+	line-height:2.2em;
+}
+.invite h4:after{
+	width:60px;
+	background:#555;
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+	.banner{
+		padding-top:60%;
+	}
+}
+@media (max-width:992px) {
+	.center-container p{
+		display:none;
+	}
+
+	.tour-lis li{
+		float:none;
+		width:33%;
+	}
+	.descript{
+		padding: 30px 20px;
+	}
+	.invite .thumbnail{
+		padding: 10px;
+	}
+	.hoverimg:hover .thumbnail{
+		padding-top: 8px;
+		padding-bottom:20px;
+		transition:0.2s linear;
+	}
+	.tour-lis li img{
+		width:100%;
+	}
+ }
+@media (min-width:992px) {
+	.invite .container{
+		width:988px;
+	}
+	.invite .thumbnail{
+		padding: 35px 4px 10px;
+		transition:0.2s linear;
+	}
+	.invite img{
+		width:85%;
+		height:300px;
+	}
+	.hoverimg:hover .thumbnail{
+		padding-top: 20px;
+		padding-bottom:25px;
+	}
+
+}

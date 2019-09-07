@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>旅游商城</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="shortcut icon" href="../images/line.png">
+    <link href="../css/animate.min.css" rel="stylesheet"><script src="../js/wow.min.js"></script>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/self.css">
+    <script src='../js/jquery-1.11.1.js'></script>
+    <script src='../js/bootstrap.js'></script>
+    <script src='../js/public.js'></script>
+    <script src='../js/self.js'></script>
+</head>
+<body>
+	<nav class="navbar navbar-default my-navbar">
+	  <div class="container-fluid header-nav">
+		    <div class="navbar-header navbar-header1">
+			      <button type="button" class="navbar-toggle collapsed my-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      </button>
+			      <div class="my-logo">
+			      	<a class="navbar-brand" href="#">
+			      		<img src="../images/logo.png" alt="">
+			      	</a>
+			      </div>
+			       <ul class="nav navbar-nav navbar-right search-cart">
+				        <li>
+ 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target=".bs-example-modal-lg">&#xe61f;</span></a>
+							<!-- </button> -->
+							<div class="modal bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
+  								<!-- 窗口声明 -->
+								  <div class="modal-dialog modal-lg" role="document">
+								   	<!-- 内容声明 -->
+								    <div class="modal-content my-modal">
+								    	<!-- 模态框头部 -->
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel">搜索</h4>
+								      </div>
+								      <!-- 模态框主体 -->
+								      <div class="modal-body">
+								        <input type="text" name="" placeholder="请输入搜索词" id="" style="width:100%;outline:none;border:none">
+								      </div>
+								      <!-- 模态框脚注 -->
+								      <div class="modal-footer">
+									      <button type="button" class="btn btn-primary">确认</button>
+									       <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								
+								      </div>
+								    </div>
+								  </div>
+							</div>
+				        </li>
+				        <li><a href="#"><span class="iconfont header-icon header-bicon">&#xe6a4;</span></a></li>
+				        <li class="cart"><a href="#" class="header-icon1"><span class="iconfont  header-icon">&#xe604;</span></a></li>
+				   </ul>
+		    </div>
+
+		    <div class="collapse navbar-collapse my-col" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav my-nav">
+			        <li><a href="../index.html" target="_blank">探索北欧 <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">私人定制</a></li>
+			        <li><a href="camp.html" target="_blank">北欧夏令营</a></li>
+			        <li><a href="tour.html" target="_blank">主题游</a></li>
+			        <li><a href="#"  class="nav-curr">旅游商城</a></li>
+			        <li><a href="#">北欧资讯</a></li>
+			        <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	
+	<section class="container self-container">
+		<div class="row one-row">
+			<div class="col-sm-2 col-md-1 destination">
+				<div class="row">
+					<span class="col-xs-12">目的地</span>
+				</div>
+			</div>
+			<div class="col-sm-10 area">
+				<ul class="row">
+					<li class="col-xs-2"><a href="#" class="current">所有</a></li>
+					<li class="col-xs-2"><a href="#">丹麦</a></li>
+					<li class="col-xs-2"><a href="#">挪威</a></li>
+					<li class="col-xs-2"><a href="#">芬兰</a></li>
+					<li class="col-xs-2"><a href="#">瑞典</a></li>
+					<li class="col-xs-2"><a href="#">冰岛</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row one-row">
+			<div class="col-sm-2 col-md-1 destination">
+				<div class="row">
+					<span class="col-xs-12">旅游季节</span>
+				</div>
+			</div>
+			<div class="col-sm-10 area">
+				<ul class="row">
+					<li class="col-xs-2"><a href="#" class="current">所有</a></li>
+					<li class="col-xs-2"><a href="#">夏秋</a></li>
+					<li class="col-xs-2"><a href="#">春冬</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row self-product">
+			 <div class="col-xs-6 col-md-3 self-col wow fadeInLeft col3">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				    	<img src="../images/1.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">【Sea Fishing】卑尔根游船出海</h3>
+				        <span class="price">¥1400</span>
+				        <p class="add-btn">
+				        	<a href="#" class="self-btn" role="button">加入购物车</a>
+				        	<span class="txt"></span>
+				        </p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col wow fadeInLeft col1">
+			    <div class="thumbnail">
+			    	<div class="shadows">
+				   		<img src="../images/s2.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦瓦尔登海国家公园门票,赠旅游攻略</h3>
+				        <span class="price">¥499</span>
+				        <p><a href="#" class="self-btn" role="button">加入购物车</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col wow fadeInRight col1">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s3.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦比隆乐高乐园一日游门票50周年</h3>
+				        <span class="price">¥319<i class="price-line">-</i>¥732</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col wow fadeInRight col3">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s4.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">【DFDS游轮】哥本哈根—奥斯陆峡湾船票</h3>
+				        <span class="price">¥490<i class="price-line">-</i>¥2732</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col wow fadeInUp col1">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s5.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦哥本哈根城市一卡通</h3>
+				        <span  class="price">¥210<i class="price-line">-</i>¥968</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col2">
+			    <div class="thumbnail">
+				   <div class="shadows">
+				   		<img src="../images/s6.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦斯歌德姆庄园Skjoldemose</h3>
+				        <span  class="price">¥210<i class="price-line">-</i>¥968</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col3">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s7.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦哥本哈根经典运河游船之旅</h3>
+				        <span class="price">¥140</span>
+				        <p><a href="#" class="self-btn" role="button">加入购物车</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col4">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s8.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">挪威卑尔根弗洛伊恩山索道缆车票</h3>
+				        <span  class="price">¥25<i class="price-line">-</i>¥240</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col1">
+			    <div class="thumbnail">
+				   <div class="shadows">
+				   		<img src="../images/s9.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">挪威奥斯陆城市通票30个免费点</h3>
+				        <span  class="price">¥215<i class="price-line">-</i>¥740</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col2">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s10.jpg" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">丹麦哥本哈根经典运河游船之旅</h3>
+				        <span class="price">¥140</span>
+				        <p><a href="#" class="self-btn" role="button">加入购物车</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col3">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s11.png" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">芬兰赫尔辛基城市通票29个免费景点</h3>
+				        <span  class="price">¥192<i class="price-line">-</i>¥544</span>
+				        <p><a href="#" class="self-btn" role="button">选择选项</a></p>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-6 col-md-3 self-col  wow fadeInUp col4">
+			    <div class="thumbnail">
+				    <div class="shadows">
+				   		<img src="../images/s12.png" alt="">
+				    	<div class="wow pulse" data-wow-iteration="infinite" ></div>
+				    </div>
+				    <div class="caption">
+				        <h3 class="h3">芬兰—赫尔辛基Löyly桑拿套餐</h3>
+				        <span class="price">¥140</span>
+				        <p><a href="#" class="self-btn" role="button">加入购物车</a></p>
+				    </div>
+			    </div>
+			</div>
+			
+		</div>
+
+		<div class="pages">
+			<a href="#" class="page-current">1</a>
+			<a href="#">2</a>
+			<a href="#">下一页</a>
+		</div>
+		
+	</section>
+
+
+	<!-- 侧导航season -->
+	<aside class="aside-nav aside-nav1">
+		<ul class="aside-lis">
+			<li class="phone-icon wow pulse" data-wow-iteration="infinite" ></li>
+			<li class="aside-wx">
+				<div class="wx-box">
+              		<img src="../images/wx1.jpg" alt="">
+              	</div>
+			</li>
+			<li class="return-icon"></li>
+		</ul>
+	</aside>
+	
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<form action="#" class="row form-search">
+				<input type="text" name="" placeholder="请输入需要搜索的文字" class="col-xs-12 mysearch">
+				<span class="glyphicon glyphicon-search sear-icon"></span>
+			</form>
+			 <div class="row footer-content">
+		          <div class="col-sm-1">
+			            <h4>探索北欧</h4>
+			            <ul class="lis">
+			              <li><a href="#">丹麦</a></li>
+			              <li><a href="#">挪威</a></li>
+			              <li><a href="#/">芬兰</a></li>
+			              <li><a href="#">冰岛</a></li>
+			              <li><a href="#">瑞典</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>主题小团</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">丹挪10日深度游</a></li>
+			              <li><a href="#">丹冰挪13日专享游</a></li>
+			              <li><a href="#">冰岛环岛10日游</a></li>
+			              <li><a href="#">北欧四国经典之旅</a></li>
+			              <li><a href="#">丹芬爱10日文化游</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>北欧故事</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">韩小姐冰岛蜜月</a></li>
+			              <li><a href="#" target="_blank">张先生生蚝旅</a></li>
+			              <li><a href="#" target="_blank">李总四国游</a></li>
+			              <li><a href="#" target="_blank">美小姐的浪漫旅</a></li>
+			              <li><a href="#" target="_blank">帅先生的惊险旅</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-1">
+			            <h4>旅游商城</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">乐高乐园</a></li>
+			              <li><a href="#" target="_blank">赫拉辛基卡</a></li>
+			              <li><a href="#" target="_blank">挪威缩影</a></li>
+			              <li><a href="#" target="_blank">蓝湖温泉</a></li>
+			              <li><a href="#" target="_blank">瑞典热气球</a></li>
+			            </ul>
+		          </div>
+		           <div class="col-sm-1">
+			            <h4>关于我们</h4>
+			            <ul class="lis">
+			              <li><a href="#" target="_blank">公司简介</a></li>
+			              <li><a href="#" target="_blank">联系方式</a></li>
+			              <li><a href="#" target="_blank">合作伙伴</a></li>
+			              <li><a href="#" target="_blank">加入我们</a></li>
+			              <li><a href="#" target="_blank">企业合作</a></li>
+			            </ul>
+		          </div>
+		          <div class="col-sm-2 footer-logo">
+			            <img src="../images/logo.png" alt="">
+			            <ul class="lis">
+			              <li class="weibo"><a href="#"></a></li>
+			              <li class="wx">
+			              	<div class="wx-box">
+			              		<img src="../images/wx.jpg" alt="">
+			              		<span>Andersen TravellerAps</span>
+			              	</div>
+			              </li>
+			              <li class="video-icon"><a href="#"></a></li>
+			              <li class="face-book"><a href="#"></a></li>
+			            </ul>
+		          </div>
+		     </div>
+		     <div class="footer-addr">
+		     	<span>Andersen Traveller 是一家注册于丹麦的旅行社 CVR: 38966189</span>
+		     	<span>京ICP备18017303号-1</span>
+		     </div>
+
+ 		 </div>
+	</footer>
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>
+	
