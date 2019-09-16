@@ -3,10 +3,7 @@ $(function(){
 		$(this).children('a').addClass('nav-curr ').parent().siblings().children('a').removeClass('nav-curr');
 	});
 
-	
-
 	/*鼠标滚动*/
-
 	$(window).scroll(function(event) {
 		var h=$(window).scrollTop();
 		var x=$(window).width();

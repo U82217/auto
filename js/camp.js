@@ -20,10 +20,6 @@ $(function(){
 
 	
 	var x;
-
-	// moveimg();
-			
-	if (x>992) {moveimg();}
 	window.onresize=function(){
 		
 		x=$(window).width();

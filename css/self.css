@@ -93,7 +93,7 @@
 	cursor: pointer;
 	position: relative;
 }
-.img-shadow{
+.shadows .img-shadow{
 	position:absolute;
 	width:100%;
 	height:100%;
@@ -105,6 +105,9 @@
 	background-image: url('../images/big-white-plus.png');
 	background-repeat: no-repeat;
 	transition: all .7s ease;
+}
+.shadows div{
+	background-position: center top;
 }
 .add-btn{
 	position: relative;
