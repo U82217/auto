@@ -23,9 +23,5 @@ $(function(){
 		// $(this).removeClass('life-col1'
 	});
 
-	$('.wx,.aside-wx').hover(function() {
-		$(this).children('div').show();
-	}, function() {
-		$(this).children('div').hide();	
-	});
+	
 })

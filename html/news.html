@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>北欧资讯</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="shortcut icon" href="../images/line.png">
     <link href="../css/animate.min.css" rel="stylesheet"><script src="../js/wow.min.js"></script>
-    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/news.css">
     <script src='../js/jquery-1.11.1.js'></script>
     <script src='../js/bootstrap.js'></script>
     <script src='../js/public.js'></script>
@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-default my-navbar">
 	  <div class="container-fluid header-nav">
 		    <div class="navbar-header navbar-header1">
-			      <button type="button" class="navbar-toggle collapsed my-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			     <button type="button" class="navbar-toggle collapsed my-btn"  data-toggle="modal" data-target="#myModal1" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -33,7 +33,7 @@
 			      </div>
 			       <ul class="nav navbar-nav navbar-right search-cart">
 				        <li>
- 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target=".bs-example-modal-lg">&#xe61f;</span></a>
+ 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target="#myModal">&#xe61f;</span></a>
 							<!-- </button> -->
 							<div class="modal bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
   								<!-- 窗口声明 -->
@@ -64,19 +64,142 @@
 				   </ul>
 		    </div>
 
-		    <div class="collapse navbar-collapse my-col" id="bs-example-navbar-collapse-1">
+		    <div class="navbar-collapse my-col hidden-sm hidden-xs">
 		      <ul class="nav navbar-nav my-nav">
 			        <li><a href="../index.html" target="_blank">探索北欧 <span class="sr-only">(current)</span></a></li>
 			        <li><a href="#">私人定制</a></li>
 			        <li><a href="camp.html" target="_blank">北欧夏令营</a></li>
-			        <li><a href="#">主题游</a></li>
+			        <li><a href="tour.html" target="_blank">主题游</a></li>
 			        <li><a href="self.html" target="_blank">旅游商城</a></li>
 			        <li><a href="#" class="nav-curr">北欧资讯</a></li>
 			        <li><a href="#">关于我们</a></li>
 		      </ul>
-		    </div><!-- /.navbar-collapse -->
+		    </div>
+
+		    <div class="modal bs-example-modal-lg hidden-md hidden-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
+  								<!-- 窗口声明 -->
+				<div class="modal-dialog modal-lg my-dialog" role="document">
+						   	<!-- 内容声明 -->
+				    <div class="modal-content my-modal1">
+				    	<ul class="my-nav1">
+				        	 <li><a href="../index.html" target="_blank">探索北欧 <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">私人定制</a></li>
+					        <li><a href="camp.html" target="_blank">北欧夏令营</a></li>
+					        <li><a href="tour.html" target="_blank">主题游</a></li>
+					        <li><a href="self.html" target="_blank">旅游商城</a></li>
+					        <li><a href="#" class="nav-curr">北欧资讯</a></li>
+					        <li><a href="#">关于我们</a></li>
+		    		  </ul>
+				    </div>
+				  </div>
+			</div>
 	  </div>
 	</nav>
+	
+	<div class="banner hidden-xs">
+		<div class="bg-img">
+			<div class="txt">
+				<h1>北欧旅游玩乐汇</h1>
+				<h4>Nordic Full Of Life</h4>
+				<p>最全的北欧旅游攻略，送给最不一样的你</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="my-section">
+		<div class="container news-container">
+			<div class="row">
+				<div class="new-lelf  col-md-8 col-lg-8">
+					<div class="my-media media-border row wow fadeInRight col1">
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-sm">
+							    <a href="#" class="scale-img">
+							      <img class="media-object" src="../images/new1.png" alt="" title="北欧旅游玩乐汇 | 周末灵感9月7-9月8日">
+							    </a>
+						</div>
+			 			 
+						<div class="my-mbody col-xs-12 col-sm-12 col-md-9 col-lg-9">
+						    <h4 class="media-heading"><a href="#">北欧旅游玩乐汇 | 周末灵感9月7-9月8日</a></h4>
+						    <a href="#" class="news-date">发布日期：2019.09.08 分类：全部资讯</a>
+						    <p>
+						    周末灵感预告：2019 ILLUM时装秀 | GoBoat哥本哈根租船游 | PIPILOTTI RIST 艺术展 | 哥本哈根科技节 | BIG建筑艺术展</p>
+						     
+						</div>
+					</div>	
+					<div class="my-media media-border media-padding row wow fadeInRight col2">
+						 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-sm">
+						    <a href="#" class="scale-img">
+						      <img class="media-object" src="../images/new2.png" alt="" title="探店打卡 | 这家风靡ins的风洞飞行究竟靠什么引爆周末？">
+						    </a>
+						 </div>
+						 <div class="my-mbody col-xs-12 col-sm-12 col-md-9 col-lg-9">
+						    <h4 class="media-heading"><a href="#">探店打卡 | 这家风靡ins的风洞飞行究竟靠什么引爆周末？</a></h4>
+						    <a href="#" class="news-date">发布日期：2019.09.08 分类：全部资讯</a>
+						    <p class="line-height">
+						    	某年某月某一天，本是一个普通的日子<br>
+						    	然而，如果有机会，在这一天，你飞了起来<br>没有错，是“腾空而起”
+						    </p>
+						  </div>
+					</div>	
+					<div class="my-media media-padding row wow fadeInRight col3">
+						  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-sm">
+						    <a href="#" class="scale-img">
+						      <img class="media-object" src="../images/new3.jpg" alt="" title="秋假招募 | 仅1499RMB，参加这场“蚝”门盛宴，让你好吃到怀疑人生">
+						    </a>
+						  </div>
+						  <div class="my-mbody col-xs-12 col-sm-12 col-md-9 col-lg-9">
+						    <h4 class="media-heading"><a href="#">秋假招募 | 仅1499RMB，参加这场“蚝”门盛宴，让你好吃到怀疑人生</a></h4>
+						    <a href="#" class="news-date">发布日期：2019.09.08 分类：全部资讯</a>
+						    <p>
+						    “生蚝控”看过来，这里有一场“蚝”门盛宴等着你...</p>
+						  </div>
+					</div>	
+				</div>
+				<div class="col-md-1 col-lg-1"></div>
+				<div class="new-right col-md-3 col-lg-3">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="p-title">北欧旅游游玩乐汇</p>
+							<p class="p-content p-content1">推文攻略</p>
+							<p class="p-content">资料地图</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 分页 -->
+			<div class="pages hidden-xs hidden-sm">
+				<a href="#" class="current-a">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">下一页</a>
+				<a href="#">尾页</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="life-main container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 imgbg wow fadeInLeft col2">
+				 <a href="#">
+			      	<img class="media-object" src="../images/new4.jpg" alt="穿越童话大师安徒生故乡与打火匣童话故事" title="穿越童话大师安徒生故乡与打火匣童话故事">
+			    </a>
+			</div>
+			<div class="col-lg-1"></div>
+			<div class="txt-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<h4 class="life-title">北欧旅游玩乐汇</h4>
+				<span class="sub-title">Nordic Full of Life</span>
+				<span class="life-content">
+					北欧旅游玩乐汇是松恩北欧旅游旗下北欧旅游信息咨询平台，服务于丹麦、挪威、芬兰、瑞典、冰岛旅行者。凭借松恩北欧旅游对北欧旅游资源强大的整合运作优势、对消费者需求的准确把握以及完善的销售渠道，成为北欧旅游行业的新兴力量。截至目前，松恩北欧旅游拥有覆盖北欧五国和格陵兰、法罗群岛等地区、超过80种服务于不同人群的北欧全域高端旅游产品。
+				</span>
+			</div>
+		</div>
+	</div>
+
 	<!-- 侧导航 -->
 	<aside class="aside-nav aside-nav1">
 		<ul class="aside-lis">

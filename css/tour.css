@@ -16,7 +16,6 @@ html,body,section{
     left: 0;
     bottom: 0;
     transform-style: preserve-3d;
-	/*animation:play 20s infinite;*/
 }
 .screen1{
 	background-image: url('../images/screen1.jpg');
@@ -36,12 +35,8 @@ html,body,section{
 }
 .screen3{
 	background-image: url('../images/screen3.jpg');
-}/*
-@keyframes play{
-	0%{transform: scale(1);}
-	50%{transform: scale(1.05);}
-	100%{transform: scale(1);}
-}*/
+}
+
 .one{
 	overflow: hidden;
 	width:100%;

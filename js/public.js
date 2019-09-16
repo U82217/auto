@@ -38,4 +38,11 @@ $(function(){
 		$('html,body').animate({'scrollTop':0}, 500);
 	});
 
+
+	$('.wx,.aside-wx').hover(function() {
+		$(this).children('div').show();
+	}, function() {
+		$(this).children('div').hide();	
+	});
+
 })

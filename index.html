@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="shortcut icon" href="images/line.png">
     <link href="css/animate.min.css" rel="stylesheet"><script src="js/wow.min.js"></script>
-    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <script src='js/jquery-1.11.1.js'></script>
     <script src='js/bootstrap.js'></script>
@@ -18,10 +18,12 @@
     <script src='js/index.js'></script>
 </head>
 <body>
+
+	<!-- 导航条 -->
 	<nav class="navbar navbar-default my-navbar">
 	  <div class="container-fluid header-nav">
 		    <div class="navbar-header navbar-header1">
-			      <button type="button" class="navbar-toggle collapsed my-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			     <button type="button" class="navbar-toggle collapsed my-btn"  data-toggle="modal" data-target="#myModal1" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -35,7 +37,7 @@
 			      </div>
 			       <ul class="nav navbar-nav navbar-right search-cart">
 				        <li>
- 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target=".bs-example-modal-lg">&#xe61f;</span></a>
+ 							<a href="#"><span class="iconfont header-icon header-bicon"  data-toggle="modal" data-target="#myModal">&#xe61f;</span></a>
 							<!-- </button> -->
 							<div class="modal bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
   								<!-- 窗口声明 -->
@@ -66,41 +68,51 @@
 				   </ul>
 		    </div>
 
-		    <div class="collapse navbar-collapse my-col" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav my-nav">
-			        <li><a href="#" target="_blank" class="nav-curr">探索北欧 <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">私人定制</a></li>
-			        <li><a href="html/camp.html" target="_blank">北欧夏令营</a></li>
-			        <li><a href="html/tour.html" target="_blank">主题游</a></li>
-			        <li><a href="html/self.html" target="_blank">旅游商城</a></li>
-			        <li><a href="#">北欧资讯</a></li>
-			        <li><a href="#">关于我们</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+		    <div class="navbar-collapse my-col hidden-sm hidden-xs">
+			     <ul class="nav navbar-nav my-nav">
+				        <li><a href="" class="nav-curr">探索北欧 <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">私人定制</a></li>
+				        <li><a href="html/camp.html" target="_blank">北欧夏令营</a></li>
+				        <li><a href="html/tour.html" target="_blank">主题游</a></li>
+				        <li><a href="html/self.html" target="_blank">旅游商城</a></li>
+				        <li><a href="html/news.html" target="_blank">北欧资讯</a></li>
+				        <li><a href="#">关于我们</a></li>
+			     </ul>
+		    </div>
+
+		    <div class="modal bs-example-modal-lg hidden-md hidden-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-keyboard='false'>
+				<div class="modal-dialog modal-lg my-dialog" role="document">
+				    <div class="modal-content my-modal1">
+				    	<ul class="my-nav1">
+				       		<li><a href="" class="nav-curr">探索北欧 <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">私人定制</a></li>
+					        <li><a href="html/camp.html" target="_blank">北欧夏令营</a></li>
+					        <li><a href="html/tour.html" target="_blank">主题游</a></li>
+					        <li><a href="html/self.html" target="_blank">旅游商城</a></li>
+					        <li><a href="html/news.html" target="_blank">北欧资讯</a></li>
+					        <li><a href="#">关于我们</a></li>
+		    		    </ul>
+				    </div>
+				  </div>
+			</div>
+	  </div>
 	</nav>
+	
 	<!-- banner中的轮播图 -->
 	<div class="banner  ">
 		<div id="carousel-example-generic" class="carousel slide bannerimg animated slideInRight" data-ride="carousel">
-        <!-- 指示器 -->
 	        <ol class="carousel-indicators dot">
 		          <li data-target="#carousel-example-generic" data-slide-to="0" class="active dot1"></li>
 		          <li data-target="#carousel-example-generic" data-slide-to="1" class="dot1"></li>
 		          <li data-target="#carousel-example-generic" data-slide-to="2" class="dot1"></li>
 		          <li data-target="#carousel-example-generic" data-slide-to="3" class="dot1"></li>
 	        </ol>
-	        <!-- 轮播图片及说明文字 -->
 	        <div class="carousel-inner lunbo" role="listbox">
 		          <div class="item active">
-		          <!--
-		          .hidden-xs	额外的小设备（小于 768px）隐藏
-				  .hidden-sm	小型设备（768 px 起）隐藏
-				  .hidden-md	中型设备（768 px 到 991 px）隐藏
-		           .hidden-lg	大型设备（992 px 及以上）隐藏 -->
 			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner1.jpg')"></a>
 			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner1.jpg" alt=""></a>
 			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
-						    <h4>冰岛南岸极光专享之旅</h4>
+						    <h4 class="wave-txt">冰岛南岸极光专享之旅</h4>
 						    <h5>[主题小团]</h5>
 						    <div class="place">
 						    	<a href="#" target="_blank" class="pbefore">极光精灵</a>
@@ -116,7 +128,7 @@
 			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner2.jpg" alt=""></a>
 			            <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
 			            	<span class="iconfont dicon">&#xe612;</span>
-						    <h4>丹麦亲子童趣游</h4>
+						    <h4 class="wave-txt">丹麦亲子童趣游</h4>
 						    <h5>[主题小团]</h5>
 						    <div class="place place1">
 						    	<a href="#" target="_blank">和孩子一起回到童年，感受通话王国的魅力</a>
@@ -127,7 +139,7 @@
 			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner3.jpg')"></a>
 			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner3.jpg" alt=""></a>
 			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
-						    <h4>冰“芬”极光享趣之旅</h4>
+						    <h4 class="wave-txt">冰“芬”极光享趣之旅</h4>
 						    <h5>[主题小团]</h5>
 						    <div class="place">
 						    	<a href="#" target="_blank" class="pbefore">圣诞老人</a>
@@ -142,7 +154,7 @@
 			            <a href="#" class="pc_imgBox hidden-xs hidden-sm  hidden-md" style="background-image: url('images/banner4.jpg')"></a>
 			            <a href="#" class="m_imgBox hidden-lg"><img src="images/banner4.jpg" alt=""></a>
 			             <div class="carousel-caption banner-title animated fadeIn" id="myanimation">
-						    <h4>挪威瑞典极光双享游</h4>
+						    <h4 class="wave-txt">挪威瑞典极光双享游</h4>
 						    <h5>[主题小团]</h5>
 						    <div class="place place2">
 						    	<a href="#" target="_blank" class="pbefore">“最全极光追寻路线”</a>
@@ -270,7 +282,7 @@
 				    <div class="thumbnail mythumbnail">
 					      <div class="thum-img"><img src="images/self1.jpg" alt=""></div>
 					      <div class="caption">
-					      	<h3><a href="#">【DFDS游乐园】哥本哈根—奥斯陆游乐园</a></h3>
+					      	<h3><a href="#">【DFDS游乐园】哥本哈根—奥斯陆游</a></h3>
 					      	<p>一次游乐体验斯堪让你终生难忘..</p>
 						     <p class="mprice">￥1400</p>	  
 					      </div>
@@ -309,7 +321,7 @@
 				<div class="row">
 				     <div class="col-md-3 wow fadeInUp life-col col1">
 					    <div class="thumbnail mythumbnail">
-						      <div class="thum-img"><img src="images/life4.jpg" alt=""></div>
+						      <div class="thum-img"><img src="images/life4.png" alt=""></div>
 						      <div class="caption life-caption">
 						      	<span class="my-underline"></span>
 						      	<p>法罗群岛游记 | 探秘北大西洋最后的遗世秘境</p>

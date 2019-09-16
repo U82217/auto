@@ -6,14 +6,12 @@ $(function(){
 		clearInterval(timer);
 		timer=setInterval(function(){
 			num++;
-			if(num>6)
-				{ 
+			if(num>6){ 
 					num=0;
 					$('.tour-lis').css('left',-num*33.42+'%');
 					num=1;
 			 		$('.tour-lis').animate({'left':-num*33.42+'%'},500);   				
-				}
-				else{
+			}else{
 					$('.tour-lis').animate({'left':-num*33.42+'%'},500);
 
 				}
@@ -23,8 +21,9 @@ $(function(){
 	
 	var x;
 
-	moveimg();
-
+	// moveimg();
+			
+	if (x>992) {moveimg();}
 	window.onresize=function(){
 		
 		x=$(window).width();
@@ -52,16 +51,16 @@ $(function(){
 
 		/*鼠标点击事件*/
 		$('.tour-left').click(function(){
-		num--;
-		if (num<0) {
-			num=6;
-			$('.tour-lis').css('left',-num*33.42+'%');
-			num=5;
-			$('.tour-lis').animate({'left':-num*33.42+'%'},500);
-		}
-		else{
-			$('.tour-lis').animate({'left':-num*33.42+'%'},500);
-		}
+			num--;
+			if (num<0) {
+				num=6;
+				$('.tour-lis').css('left',-num*33.42+'%');
+				num=5;
+				$('.tour-lis').animate({'left':-num*33.42+'%'},500);
+			}
+			else{
+				$('.tour-lis').animate({'left':-num*33.42+'%'},500);
+			}
 
 	})
 
